@@ -119,9 +119,8 @@ $(document).ready(function(){
 			reader.readAsDataURL(file);
 		}
 	});
-	websocket.onerror	= function(ev){$('.discussion').append("<li class='system_css'><div class=\"system_error\">Error Occurred - "+ev.data+"</div><li>");}; 
+	websocket.onerror	= function(ev){$('.discussion').append("<li class='system_css'><div class=\"system_error\">Error Occurred - "+ev.data+"   the server.php dose not runing. Please ask author to run this file or copy this project file to your own server and follow the document to run this project on your server</div><li>");}; 
 	websocket.onclose 	= function(ev){$('.discussion').append("<li class='system_css'><div class=\"system_msg\">Connection Closed</div><li>");};
-	
 	
 	
 	//overlay window
